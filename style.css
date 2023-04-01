@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background: url(/banner.gif);
+    background-position: center;
+    background-size: cover;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+header .menu{
+    position: fixed; /*posicionamento absoluto*/
+    width: 100%;/*Largura da tela*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;/*Alinha verticalmente*/
+    padding: 40px;
+}
+
+
+header .menu li{
+    display: inline-block; /*Alinhado por blocos*/
+
+}
+
+header .menu a{
+    color: aliceblue;
+    padding: 8px 12px; 
+    border-radius: 3px;
+    transition: 200ms;
+}
+
+header .menu .ativo, header .menu a:hover{
+    color: #9999;
+    background: white;
+}
+
+.main{
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.main .links a{
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid white;
+    display: inline-block;
+    border-radius: 3px;
+    margin-top: 27px;
+    transition: 200ms;
+}
+
+.main .links a:hover{
+    color: #4444;
+
+}
+
+.main .login{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 360px;
+    height: 200px;
+    margin: auto;
+    background: rgb(36, 38, 41);
+    box-shadow: 0px 0px 10px rgb(148, 130, 130);
+    border-radius: 4px
+}
+
